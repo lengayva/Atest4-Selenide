@@ -19,7 +19,7 @@ class Card1Test {
     }
 
     @Test
-    void shouldBeSuccessfulForm() {
+    public void shouldBeSuccessfullyCompleted() {
         open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Пермь");
         String planningDate = generateDate(4, "dd.MM.yyyy");
