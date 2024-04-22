@@ -27,7 +27,7 @@ class Card1Test {
         $("[data-test-id='date'] input").setValue(planningDate);
         $("[data-test-id='name'] input").setValue("Иванов-Иванович Иван");
         $("[data-test-id='phone'] input").setValue("+79526456883");
-        $("[data-test-id='agreement'] input").click();
+        $("[data-test-id='agreement']").click();
         $("button.button").click();
         $(".notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
